@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.15)),url(./Images/harry-gillen-EMj8UxrdALc-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    text-decoration: none;
+    position: relative;
+    left: 24%;
+}
+
+
+.logo {
+    width: 70px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar span {
+    color: #fff;
+    text-transform: uppercase; 
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+}
+
+
+.navbar ul li a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover:after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 10px;
+}
+
+.content p {
+    margin-top: 30px;
+}
+
+
+.music {
+    position: relative;
+    margin: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+
+.music h1 {
+    position: relative;
+    margin-top: 20px;
+    color: #333;
+    left: 20px;
+}
+
+.music p {
+    position: relative;
+    left: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: left;
+}
+
+
+.music .icon-box i {
+    position: relative;
+    margin: 20px;
+    height: 30px;
+    color: #fff;
+    font-size: 28px;
+    top: -1px;
+}
+
+.music a {
+    position: relative;
+    left: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.music a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.btn {
+    position: absolute;
+    top: 65%;
+    color: #fff;
+    left: 44%;
+    width: 13%;
+    height: 45px;
+    background: rgba(255, 255, 255, .2);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+}  
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.btn a:hover {
+    color: #333;
+    transition: .3s;
+}
+
+
+.icon-box {
+    position: relative;
+    border: 2px solid rgba(13,110,253,1);
+    border-radius: 10px;
+    width: 70px;
+    background-color: rgba(13,110,253,1);
+    left: 30px;
+}
+
+.artist {
+    border: 1px;
+    outline: none;
+    width: auto;
+    height: 800px;
+    background-color: rgba(248,249,250,1);
+    box-shadow: 0px 0px 0px 1px #e6e1e1;
+}
+
+.artist h1 {
+    position: relative;
+    align-items: center;
+    margin: 30px;
+    text-align: center;
+}
+
+.artist h1 span {
+    color: #333;
+}
+
+.artist p {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    top: -15px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+.card-item {
+    position: relative;
+    margin: 20px;
+    height: 100%;
+    display: flex;
+}
+
+.card {
+    position: relative;
+    margin: 20px;
+    width: 27%;
+    height: 70%;
+    align-items: center;
+    border: 1px;
+    border-radius: 10px;
+    left: 5%;
+    box-shadow: 0px 0px 0px 1px #d6d2d2;
+}
+
+.card p {
+    position: relative;
+    left: 20px;
+    top: 35px;
+    text-align: left;
+    color: #887d7d;
+    font-size: 15px;
+}
+
+.card h1 {
+    position: relative;
+    text-align: left;
+    font-size: 40px;
+    top: 15px;
+}
+
+.icon-card p { 
+    position: relative;
+    margin: 20px;
+    left: 10px;
+    text-align: left;
+    top: 6px;
+}
+
+.card span { 
+    color: #a59b9b;
+}
+
+.card i {
+    color: blue;
+}
+
+.card .bx-x {
+    color: #a59b9b;
+}
+
+.card .bxs-star {
+    position: relative;
+    display: flex;
+    color: #e4d61a;
+    top: 30px;
+    left: 30px;
+}
+
+.card .bxs-star {
+    position: relative;
+    display: flex;
+    color: #e4d61a;
+    top: 34px;
+    left: 30px;
+}
+
+.card .free {
+    position: absolute;
+    align-items: center;
+    left: 50px;
+}
+
+
+.btn-pay {
+    position: absolute;
+    margin: 30px;
+    bottom: 20px;
+    border: 1px solid #0e9cee;
+    border-radius: 5px;
+    width: 80%;
+    height: 6%;
+}
+
+.btn-pay p {
+    position: relative;
+    margin: 1px;
+    top: 6px;
+    text-align: center;
+    font-weight: 600;
+    left: -2px;
+    color: #0e9cee;
+}
+
+.btn-pay:hover{
+    background-color: #0e9cee;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-pay p:hover {
+    color: #fff;
+}
+
+.btn-pay-blue {
+    position: absolute;
+    width: 80%;
+    height: 6%;
+    margin: 30px;
+    bottom: 20px;
+    border-radius: 5px;
+    background-color: #0e9cee;
+}
+
+.btn-pay-blue p {
+    margin: 1px;
+    text-align: center;
+    font-weight: 600;
+    left: -2px;
+    color: #fff;
+    top: 6px;
+}
+
+.btn-pay-blue:hover{
+    background-color: #0e8cd4;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.testimonial {
+    position: relative;
+    border: 1px solid #0e9cee;
+    width: 50%;
+    height: 40%;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    left: 250px;
+}
+
+.testimonial-p {
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    top: 20px;
+    text-align: center;
+}
+
+.testimonial-p p {
+    position: relative;
+    text-align: center;
+    top: 10px;
+}
+
+.testimonial .Comment {
+    text-align: justify;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 5px;
+    left: 50px;
+}
+
+.testimonial .bxs-comment-dots {
+    display: block;
+    position: absolute;
+    font-size: 50px;
+    color: #0e9cee;
+    top: 20px;
+}
+
+.testimonial h6 {
+    display: flex;
+    position: relative;
+    margin: 10px;
+    padding: 3px;
+    left: 50px;
+    color: #887d7d;
+}
+
+.get-in-touch {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+
+}
+
+.get-in-touch i {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+    border: 2px solid #0e8cd4;
+    background-color: #0e8cd4;
+    width: 60px;
+    border-radius: 10px;
+}
+
+.input-box input {
+    border: 2px solid #0e8cd4;
+    width: 500px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.input-box input::placeholder {
+    position: relative;
+    color: #e9d6d6;
+    left: 10px;
+}
+
+.btn-btn {
+    cursor: pointer;
+    border: 2px solid #0e8cd4;
+    width: 500px;
+    background-color: #0e9cee;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 50px;
+    margin: 10px;
+    color: #fff;
+}
