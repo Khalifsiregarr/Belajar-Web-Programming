@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+
+
+.hero .img-content{
+    width: 120%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255, .4), transparent);
+    transition: .5s;
+}
+
+.header:hover::after {
+    left: 100%;
+}
+
+/*---- Logo ----*/
+.logo {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/*---- li ----*/
+.navbar a {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+
+/*---- Checkbox ----*/
+#check {
+    display: none;
+}
+
+/*---- Icons for resposive ----*/
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.text-content {
+    position: relative;
+    margin: 30px;
+    text-align: center;
+    top: -60vh;
+    color: #fff;
+    line-height: 50px;
+}
+
+.text-content .btn {
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+.text-content .btn a {
+    color: #000;
+    text-decoration: none;
+}
+
+.services {
+    margin: 30px;
+    padding: 40px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    top: -30vh;
+    font-size: 12px;
+    justify-content: space-between;
+    line-height: 30px;
+    left: 10vh;
+}
+
+.service-item {
+    border: 2px solid #ddd2d2;
+    width: 180px;
+    height: 200px;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 2px 2px 2px 0px #ebdfdf;
+}
+
+.services .service-item i {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #77B0AA;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---- Breakout ----*/
+@media (max-width: 992px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* .hero .img-content {
+        background-image: url(asset/images/su-san-lee-E_eWwM29wfU-unsplash.jpg);
+        height: 50vh;
+    } */
+
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        /* height: 17.7rem; */
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        box-shadow: 0.5rem rgba(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .3s ease-out;
+    }
+
+    #check:checked~.navbar {
+        height: 17.7rem;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+}
+
+@media (max-width: 992px) {
+    .services {
+        display: block;
+        position: relative;
+        margin: 30px;
+        left: 1vh;
+        top: -30vh;
+    }
+}
+
